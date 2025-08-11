@@ -8,7 +8,7 @@ load_dotenv()
 
 class AgentConfig(BaseModel):
     # Groq API settings
-    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "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")
     LLM_MODEL: str = os.getenv("GROQ_MODEL", "gemma2-9b-it")
     LLM_BASE_URL: str = os.getenv("GROQ_BASE_URL", "https://api.groq.com/")
     MAX_TOKENS: int = int(os.getenv("MAX_TOKENS", 7000))  # Increased for descriptive answers
@@ -112,3 +112,4 @@ if __name__ == "__main__":
             print(f"  - {issue}")
     else:
         print("\nConfiguration is valid")
+
