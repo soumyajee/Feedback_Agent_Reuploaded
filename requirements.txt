@@ -1,0 +1,10 @@
+streamlit
+validators
+requests
+beautifulsoup4
+groq
+langchain
+langgraph
+pydantic
+python-dotenv
+
